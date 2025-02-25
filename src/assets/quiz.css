@@ -1,0 +1,194 @@
+/* quiz.css */
+.quiz {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2d6a4f; /* Darker green */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.lifelines {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lifeline-btn {
+  background-color: #9ae3b5; /* Yellow-green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.lifeline-btn:hover {
+  background-color: #7bbf8a; /* Darker yellow-green */
+}
+
+.lifeline-btn.disabled {
+  background-color: #d6f0e2;
+  cursor: not-allowed;
+}
+
+button {
+  background-color: #9ae3b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #7bbf8a;
+}
+
+button:disabled {
+  background-color: #d6f0e2;
+  cursor: not-allowed;
+}
+
+/* Question and timer box styling */
+.timer-container, .question-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timer-container {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2d6a4f;
+}
+
+.question-container {
+  text-align: center;
+}
+
+.question-container h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.options-container {
+  margin-top: 20px;
+}
+
+.option-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.option-btn:active {
+  background-color: #ccc;
+}
+
+.option-btn.correct {
+  background-color: #81c784; /* Green for correct option */
+}
+
+.option-btn.incorrect {
+  background-color: #e57373; /* Red for incorrect option */
+}
+
+/* Timer corner styling */
+.timer-container {
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #9ae3b5;
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.quiz .question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz .questionStatement {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.question-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-options button {
+  width: 80%;
+  margin: 10px 0;
+}
+
+/* Pallete section */
+.pallete {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pallete div {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.pallete .not_viewed {
+  background-color: #e0e0e0;
+}
+
+.pallete .viewed {
+  background-color: #fbc02d; /* Yellow for viewed */
+}
+
+.pallete .answered {
+  background-color: #81c784; /* Green for answered */
+}
+
+.pallete .skipped {
+  background-color: #e57373; /* Red for skipped */
+}
